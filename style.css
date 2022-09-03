@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    
+    
+ body{
+ height: 100vh;
+ display: flex;
+ align-items: center;
+justify-content: center;
+background-color: hsl(204, 43%, 93%);
+font-family: 'Karla', sans-serif;
+    }
+
+
+.container{
+ margin: 20px auto;
+box-sizing: border-box;
+width: 60%;
+box-shadow: 3px 3px 3px hsl(204, 43%, 93%);
+
+}
+
+.content1{
+ padding: 2rem;
+background-color:white ;
+border-radius: 10px 10px 0 0;
+}
+.content1 h1{
+color:hsl(179, 62%, 43%) ;
+}
+
+.content1 h2{
+color:hsl(71, 73%, 54%) ;
+padding-bottom: 0.5rem;
+}
+
+.content1 p{
+    color: hsl(218, 22%, 67%);
+}
+.grid{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+.price{
+background-color:hsl(179, 76%, 29%);
+padding: 3rem;
+color: white;
+border-radius: 0 0 0 10px;
+ }
+ h3{
+    padding-bottom: 0.5rem;
+ } 
+ 
+ .text {
+   color:hsl(218, 22%, 67%) ; 
+   padding-bottom: 0.5rem;
+ }
+ .text span{
+    color: white;
+    font-size: 1.5rem;
+ }
+.text2{
+    padding-bottom: 2rem;
+}
+ .price a{
+padding: 1rem 4.5rem;
+box-sizing: border-box;
+text-align: center;
+border-radius: 8px;
+background-color:hsl(71, 73%, 54%);
+text-decoration: none;
+color: white;
+margin-top: 30px;
+ }
+.last-section{
+ background-color: hsl(179, 62%, 43%);
+ padding: 3rem;
+ color: white;
+border-radius: 0 0 10px 0;
+    }
+  
+    .last-section p{
+        color: hsl(204, 43%, 93%);
+    }
+.attribution {
+ font-size: 11px;
+text-align: center;}
+
+.attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+
+@media(max-width:768px){
+    body{
+        height: 100vh;
+    }
+.container{
+    width: 100%;
+padding:1rem ;
+margin: auto;
+}
+  
+.grid{
+grid-template-columns: repeat(1,1fr);
+}
+
+.price{
+    border-radius: 0;
+    padding: 2.5rem;
+}
+.content1{
+    margin-top: 20px;
+    /* padding: 2rem; */
+}
+.last-section{
+    padding:2.5rem ;
+    border-radius: 0 0 10px 10px;
+}
+.price a {
+    width: 100%;
+}
+}
